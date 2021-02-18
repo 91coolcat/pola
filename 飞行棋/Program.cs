@@ -12,10 +12,9 @@ namespace 飞行棋
             Gametou(); playgame(); hditu();
             while (playpos[0] < 100 && playpos[1] < 100)
             {
-                int q = 0;
-                q++;    play(0, ref playpos[0], ref playpos[1]);
+                play(0, ref playpos[0], ref playpos[1]);
                 if (playpos[0] > 99 || playpos[1] > 99) break;
-                q++; play(1, ref playpos[1], ref playpos[0]);
+                play(1, ref playpos[1], ref playpos[0]);
             }
             Console.Clear();
             if (playpos[0] >= 100) Console.WriteLine("玩家{0}无耻的赢了玩家{1}", gamenames[0], gamenames[1]);
