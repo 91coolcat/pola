@@ -23,9 +23,8 @@ namespace 井字棋
                     if (vs == "0") ing = 1;
                     i = 1;pk = true; gamesj();Console.Clear();
                 }
+                if (i == 8) { Console.WriteLine("平局");Console.ReadLine(); i = 1; }
             }
-            Console.WriteLine("ssss");
-            Console.ReadLine();
         }
         public static void gametou()
         {
