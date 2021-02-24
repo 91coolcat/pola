@@ -14,7 +14,7 @@ namespace 井字棋
             gametou(); gamesj();
             for (int i = 1+ing; i < Gamesplay.Length + 2+ing && pk; i++)
             {
-                ditu(i % 2); Console.Clear();
+                ditu(i % 2);
                 if (pk == false)
                 {
                     Gamessj[i % 2] += 1;
@@ -49,6 +49,7 @@ namespace 井字棋
         }//
         public static void ditu(int a)
         {
+            Console.Clear();
             Console.WriteLine("{0}|{1}|{2}\n--------\n{3}|{4}|{5}\n--------\n{6}|{7}|{8}"
             , Gamesplay[6], Gamesplay[7], Gamesplay[8], Gamesplay[3], Gamesplay[4], Gamesplay[5], Gamesplay[0]
             , Gamesplay[1], Gamesplay[2]);
@@ -69,7 +70,7 @@ namespace 井字棋
                 }
                 catch
                 {
-                    Console.WriteLine("输入不合理"); Console.ReadLine();
+                    Console.WriteLine("输入不合理"); Console.ReadLine(); ditu(a);
                 }
             }
         }
