@@ -21,7 +21,7 @@ namespace 井字棋
                     ditu(i % 2); Console.WriteLine("玩家{0}获胜\n当前比分{1}\t{2}\n按下任意键继续，输入0交换先手位置",GamesName[i%2], Gamessj[i % 2], Gamessj[1-i % 2]);
                     string vs = Console.ReadLine();
                     if (vs == "0") ing = 1;
-                    i = 0;
+                    i = 1;pk = true; gamesj();Console.Clear();
                 }
             }
             Console.WriteLine("ssss");
